@@ -83,3 +83,6 @@ def quiz_difficulty(x):
         # quiz_hard()
 
 quiz_difficulty(x)
+
+#small changes
+
