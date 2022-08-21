@@ -13,4 +13,3 @@ def useful_function1(x):
 
 print(useful_function1(5))
 
-
