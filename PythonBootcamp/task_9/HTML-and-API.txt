@@ -1,0 +1,32 @@
+API (Application Programming Interface)
+- Messenger between 2 applications
+    - Appl.1 wants certain data and gives it to API
+    - API sends data to server (Appl.2) -> server from Appl.2 looks up requested data
+    - after getting the requested data Appl.2 sends it back to API
+    - API takes data and sends it to Appl.1 in away that Appl.1 can read it
+
+Example:
+- Customer (Appl.1), Waiter (API), Restaurant(Appl.2)
+    > Customer wants to eat a Burger
+    > C gives this information to Waiter
+    > Waiter sends this information to Restaurant
+    > R knows this information and makes the Burger
+    > Burger which was asked for will be send to W
+    > W will send Burger to C
+    > C has the requested Burger
+
+
+HTML (Hypertext Markup Language)
+- used for creating webpages
+- describes the structure of a webpage
+- it includes elements which tell the browser how to display it
+- elements labels pieces of content such as for example:
+    > this is a headline
+    > this is a paragraph
+    > this is a graphic
+    > this is a link
+- styling is often times made by creating a new file (CSS)
+- CSS stands for Cascading Styling Sheets
+    > in this file you create the design of certain elements
+- while styling comes from CSS file HTML is used to create the structure of the website
+

@@ -1,0 +1,32 @@
+What is Web Scraping?
+- automated process of large data extraction from a website
+- it requires software tools such as:
+    > ScrapingBee
+    > Octoparse
+    > Scrapy
+    > ParseHub
+    > FMiner
+
+Usual steps to go through during a web scraping process:
+1. retrieve content from website (giving URL first)
+2. extract required data (define data which is needed)
+3. store parsed data into files like: (download defined data and store it into file type)
+    > .csv
+    > .json
+    > .xlsx
+
+Use cases:
+- market research
+- brand protection (violations)
+- price monetoring
+- SEO monetoring
+- review monetoring
+- stock market analysis
+
+Python and its role for web scraping
+- Python is a coding language which is often used to automate things
+- web scraping is an automated process
+- Python can write scripts which automate the process of web scraping
+    Problems which can occure:
+    - Websites are often times unique so code needs to be adjusted according to them
+    - Websited constantly change so adjusting code is often times necessary
