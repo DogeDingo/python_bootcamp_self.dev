@@ -1,0 +1,8 @@
+How to make my data accessible to others?
+
+- creating a json, csv, xmlx (depending) file to save data
+    - uploading file into GitHub repository
+    - uploading file into any cloud based storage
+    - send it via E-Mail (LOL)
+    - make my sql database accessible via Admin rights(?)
+

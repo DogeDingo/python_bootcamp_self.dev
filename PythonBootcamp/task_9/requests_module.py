@@ -1,9 +1,10 @@
 # task 9 C)
 import requests
+from project_config import URL, c
 
-r = requests.get("https://www.apple.com")
+r = requests.get(URL)
 
-# print(r.text)
+print(r.text)
 # line 6 prints the html source code
 
 # dir(r) shows us what methods we can use from the webpage

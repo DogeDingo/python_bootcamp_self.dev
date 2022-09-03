@@ -1,0 +1,12 @@
+If you run line 29 you will get the image source code as: //:0
+
+The reason why is the following:
+Starting with // (omitting the protocol) causes the protocol of the current page to be used,
+preventing "insecure content" warnings in HTTPS pages. Skipping the host name isn't necessary,
+but makes it shorter. Finally, a port of :0 ensures that a server request can't be made (it isn't a valid port,
+according to the spec).
+
+What does this mean?
+You can't get the image source code because the server won't allow it.
+
+Source: https://stackoverflow.com/questions/5775469/whats-the-valid-way-to-include-an-image-with-no-src
