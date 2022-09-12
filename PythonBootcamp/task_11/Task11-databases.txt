@@ -1,0 +1,50 @@
+Why do you need databases and don't save everything into .json files?
+
+- DB needed to save a large amount of data
+- DB are scalable in order to secure high performance
+- .json files aren't always the best way to save your data (structure)
+- file could get lost/corrupted (let's imagine you don't create a backup)
+- DB gives the opportunity to split your data across multiples DBs
+
+relational database (RDBMS)
+- small amount of data
+- if you want to enforce constraints
+- factual & numeric data
+- if you are looking for flexible queries
+- hard to setup but easier to manage later
+- small projects with lower scaling
+- access pattern not known yet
+
+NoSQL (non relational SQL)
+- large amount of 'messy' data
+    - structure of data is not relevant (schemaless)
+- known access patterns (includes PK)
+- okay with high performance but less flexible queries
+- offers better scaling in case you get more large amount of data (partitions, hashs)
+- if you are dealing with real time data
+- large projects with high scale + performance
+
+
+What is SQL
+- Structured query language
+- language in order to deal with relational databases
+    - for storing, manipulating and retreiving data from databases
+- database management systems:
+    - mysql
+    - postgreSQL (pgAdmin4)
+    - MS Access (microsoft access)
+    - Oracle
+
+COMMANDS:
+SELECT  - used to specify a column where you want your data from
+FROM    - used to specify a table where you want your data from
+WHERE   - used to set conditions which data you want to retreive
+INSERT  - used to add data to a table
+
+
+PostgreSQL  - object-relational database
+            - a place to manage databases
+            - a place to create databases (?)
+    - pgAdmin4 software/tool to handle the database
+
+

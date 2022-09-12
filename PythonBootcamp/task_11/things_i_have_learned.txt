@@ -1,0 +1,39 @@
+FOR TASK 11: WATCH YOUTUBE LINK: https://www.youtube.com/watch?v=M2NzvnfS-hI
+
+1.0. first install package pip install psycopg2
+1.1. different way of importing a module: import <name_folder_module>.<name_module_python_file>
+2. to setup a connection between python and your data you need the following things: (can all be found in pgAdmin4)
+    - 'hostname'
+    - 'password'
+    - port (int)
+    - 'database_name'
+    - 'username'
+3. open context manager:
+       with psycopg2.connect(
+            host = hostname,
+            dbname = database,
+            user = username,
+            password = pwd,
+            port = port_id) as variable_name:
+
+3.1. context manager .commits() after executing script for us but still have to manually close the connection
+3.2. close connection by using variable_name.close()
+4.0. in order to work with a table we need a cursor (allows python code to execute PostgreSQL commands)
+    - the cursor is in between the DB context manager and variable_name.close() function
+4.1. open cursor with context manager as well:
+    >>> with conn.cursor() as variable_name:
+    - usually need to close cursor as well but with context manager not needed
+    - to execute PostgreSQL commands use: variable_name.execute(SQL)
+4.2. How to insert things into your table via Python
+    - First create: variable_name = 'INSERT INTO <tablename> (<column_name1>,<column_name2>, ...) VALUES (%s,...)'
+        > %s is a placeholder for a value
+    - Second create: variable_name = (<record1>,<record2>,...)
+        > make sure your record is like the set datatype
+5.0. Fetch data
+    - execute cursor first via variable_name.execute('SELECT * FROM <table_name>')
+    - second use variable_name.fetchall()
+    - use for loop in order to print your data differently
+5.1. Fetch data in form of a dictionary
+    - import psycopg2.extras
+    - when calling your cursor (in the line where you use with...) put into .cursor(cursor_factory=psycopg2.extras.DictCursor)
+    - now when you print your data you can access it via the KEY
