@@ -1,10 +1,12 @@
-# my credentials
+import json
 
+# my credentials
 hostname = 'localhost'
 database = 'playground'
 username = 'postgres'
 pwd = 'jonnyssecret'
 port_id = 5432
+
 
 # function to create a table in PostgreSQL with user input
 def create_table():

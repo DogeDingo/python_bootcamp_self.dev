@@ -1,5 +1,6 @@
 import psycopg2
 from db_modules import db_module_pro
+from db_modules.db_module_pro import hostname
 
 if __name__ == '__main__':
     with psycopg2.connect(

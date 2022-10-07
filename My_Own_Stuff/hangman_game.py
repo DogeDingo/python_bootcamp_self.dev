@@ -1,21 +1,22 @@
-# first of all we know that we want to choose randomly from the list
-# which means we have to import the library random
 import random
-import string
 
-from words_for_hangman import words_for_hangman
+if __name__ == "__main__":
 
-def get_valid_word(words_for_hangman):
-    word = random.choice(words_for_hangman) #randomly chooses something from the list
-    while '-' in words_for_hangman or ' ' in words_for_hangman:
-        random.choice(words_for_hangman) # while there is a dash or a space in the randomly chosen word
-                                        # go through the while loop again
-    return word.upper()
+    capitals_dict = {
+        'Alabama': 'Montgomery',
+        'Alaska': 'Juneau',
+        'Arizona': 'Phoenix',
+        'Colorado': 'Denver'
+    }
 
-def hangman():
-    word = get_valid_word(words_for_hangman)
-    word_letters = set(word) # letters in the word
-    alphabet = set(string.ascii_uppercase) # import an alphabet from the english language
-    used_letters = set() # what the user has guessed
+    state, capital = random.choice(list(capitals_dict.items()))
+    print(random.choice(list(capitals_dict.items())))
 
-user_input = input('Type something')
+    checker = True
+    while checker == True:
+        answer_user = input("Whats the name of the capital from the " + state + ": \n").lower()
+        if answer_user == capital.lower():
+            print("That is great")
+            checker = False
+        else:
+            print("Try again")
